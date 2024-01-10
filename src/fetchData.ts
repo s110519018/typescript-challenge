@@ -7,3 +7,7 @@
 
 // 請在下方寫下你的程式碼
 
+export const fetchData = (url: string) => {
+    return fetch(url)
+        .then(res => res.json())
+} 

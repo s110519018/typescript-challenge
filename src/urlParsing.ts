@@ -20,4 +20,10 @@ interface UrlParts {
 
 export function parseUrl(url: string): UrlParts {
    // 請在此處寫下你的程式碼
+   const data: URL = new URL(url)
+   return {
+    protocol: data.protocol,
+    hostname: data.hostname,
+    path: data.pathname
+   }
 }
